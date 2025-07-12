@@ -1,0 +1,24 @@
+# Dev/test/source-only folders
+src/
+tests/
+.vscode/
+.idea/
+coverage/
+logs/
+
+# Config-only
+*.config.js
+jest.*
+tsconfig*.json
+
+# Ignore dotfiles and envs
+.env*
+.git*
+.github/
+.editorconfig
+
+# Keep only compiled and metadata files
+!.npmrc
+README.md
+LICENSE
+dist/
