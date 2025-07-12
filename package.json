@@ -1,0 +1,57 @@
+{
+  "name": "easy-places-sdk",
+  "version": "1.0.0",
+  "description": "Node.js SDK for querying countries, states, and cities from a PostgreSQL database.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "country",
+    "state",
+    "city",
+    "location",
+    "places",
+    "geo",
+    "sdk",
+    "postgresql",
+    "nodejs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aj4561/easy-places-sdk.git"
+  },
+  "author": "Ajay Kaithwas <ajkaithwas4561@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aj4561/easy-places-sdk/issues"
+  },
+  "homepage": "https://github.com/aj4561/easy-places-sdk#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "jest": "^30.0.4",
+    "nodemon": "^3.1.0",
+    "ts-jest": "^30.0.1",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "pg": "^8.11.1"
+  }
+}
